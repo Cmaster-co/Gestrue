@@ -18,6 +18,7 @@ public class DataSmooting {
 	}
 	//邻域平滑滤波
 	public double[] Gaussian(double[] a, int n){
+		//2*n是 邻域的窗口值
 		int length = a.length;
 		double average = 0 ;
 		List list_out = new ArrayList();
