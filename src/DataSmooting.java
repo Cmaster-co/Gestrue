@@ -13,4 +13,7 @@ public class DataSmooting {
 		average = sum / length;
 		return average;
 	}
+	public double[] Gaussian(){
+		return null;
+	}
 }
