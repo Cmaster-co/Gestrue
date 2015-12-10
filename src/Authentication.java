@@ -53,6 +53,7 @@ public class Authentication {
 		double[] x = recoveryPoint(a);
 		double[] y = recoveryPoint(b);
 		double[] z = recoveryPoint(c);
+		System.out.println(x);
 		list_out.add(x);
 		list_out.add(y);
 		list_out.add(z);
@@ -93,7 +94,7 @@ public class Authentication {
 						break;
 					}
 				}
-				if(flag == 1)
+				if(flag == 1 && Math.abs(a[i] - a[i-n]) > 1)
 					list_out.add(a[i]);
 			}
 			//判断波峰
@@ -123,7 +124,7 @@ public class Authentication {
 						break;
 					}
 				}
-				if(flag == -1)
+				if(flag == -1 && Math.abs(a[i] - a[i-n]) > 1)
 					list_out.add(a[i]);
 			}
 		}
